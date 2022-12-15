@@ -30,6 +30,6 @@ Empresa com mais produtos: {empresa_frequente}"""
 
     @staticmethod
     def _find_fabricacao_antiga(produtos):
-        fabricaoes = [item["data_de_fabricacao"]
-                      for item in produtos]
-        return min(fabricaoes)
+        fabricacoes = [item["data_de_fabricacao"]
+                       for item in produtos]
+        return min(fabricacoes)
