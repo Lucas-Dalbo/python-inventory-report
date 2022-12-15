@@ -4,10 +4,10 @@ from collections import Counter
 
 class SimpleReport:
     @classmethod
-    def generate(self, produtos):
-        fabricacao_antiga = self._find_fabricacao_antiga(produtos)
-        validade_proxima = self._find_validade_proxima(produtos)
-        empresa_frequente = self._find_most_common(produtos, "nome_da_empresa")
+    def generate(cls, produtos):
+        fabricacao_antiga = cls._find_fabricacao_antiga(produtos)
+        validade_proxima = cls._find_validade_proxima(produtos)
+        empresa_frequente = cls._find_most_common(produtos, "nome_da_empresa")
 
         return f"""Data de fabricação mais antiga: {fabricacao_antiga}
 Data de validade mais próxima: {validade_proxima}
