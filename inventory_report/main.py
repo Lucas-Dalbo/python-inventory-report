@@ -20,4 +20,4 @@ def main():
     inventario = InventoryRefactor(file_types[file_type])
     data = inventario.import_data(file, rep_type)
 
-    return print(data, end='')    
+    return print(data, end='')
