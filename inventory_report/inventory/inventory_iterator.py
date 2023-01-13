@@ -11,6 +11,6 @@ class InventoryIterator(Iterator):
 
         if not item:
             raise StopIteration()
-        
+
         self.index += 1
         return item

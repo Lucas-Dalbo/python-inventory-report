@@ -18,7 +18,7 @@ class InventoryRefactor(Iterable):
         data = self.importer.import_data(arquivo)
         for item in data:
             self.data.append(item)
-        
+
         return self.__report_types[rep_type].generate(data)
 
     def __iter__(self):
