@@ -1,4 +1,5 @@
 import sys
+sys.path.insert(1, '.')
 from inventory_report.importer.csv_importer import CsvImporter
 from inventory_report.importer.xml_importer import XmlImporter
 from inventory_report.importer.json_importer import JsonImporter
@@ -20,4 +21,8 @@ def main():
     inventario = InventoryRefactor(file_types[file_type])
     data = inventario.import_data(file, rep_type)
 
-    return print(data, end='')
+    print(data, end='')
+
+
+if __name__ == "__main__":
+    main()
